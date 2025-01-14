@@ -26,18 +26,18 @@
   }
 
 
-  .client_section .box {
+  .team_section .box {
     margin: 15px;
   }
 
-  .client_section .carousel_btn-box {
+  .team_section .carousel_btn-box {
     display: flex;
     justify-content: center;
     margin-top: 45px;
   }
 
-  .client_section .carousel-control-prev,
-  .client_section .carousel-control-next {
+  .team_section .carousel-control-prev,
+  .team_section .carousel-control-next {
     position: unset;
     margin: 0 2.5px;
     width: 45px;
@@ -72,12 +72,12 @@
     margin-bottom: 45px;
   }
 
-  .server_section {
+  .quote_section {
     background: none;
-    background-color: #020230;
+    background-color: #231f1e;
   }
 
-  .server_section .img-box {
+  .quote_section .img-box {
     margin-bottom: 25px;
   }
 
@@ -102,17 +102,17 @@
 @media (max-width: 576px) {
 
 
-  .client_section .box {
+  .team_section .box {
     flex-direction: column;
     align-items: center;
   }
 
-  .client_section .box .detail-box {
+  .team_section .box .detail-box {
     padding: 85px 45px 45px 45px;
 
   }
 
-  .client_section .box .img-box {
+  .team_section .box .img-box {
     margin-right: 0;
     margin-bottom: -65px;
   }
