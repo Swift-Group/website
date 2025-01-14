@@ -747,7 +747,7 @@ a:focus {
 }
 
 .team_section {
-  padding-bottom: 80px;
+  padding-bottom: 150px;
   padding-top: 80px;
 }
 
@@ -839,6 +839,21 @@ a:focus {
 .team_section .carousel-control-next {
   right: 0;
 }
+
+/** Project section */
+/**
+
+//////////////////////////////////
+Add here all css for sub page porject
+
+
+
+
+
+
+//////////////////////////////////
+
+*/
 
 .contact_section {
   position: relative;
