@@ -5,8 +5,8 @@
 }
 body {
   font-family: 'Lato-Regular',"Roboto", sans-serif;
-  color: #0c0c0c;
-  background-color: #f8f8f8;
+  color: #dfdfdf;
+  background-color: #303030;
   overflow-x: hidden;
 }
 
@@ -110,7 +110,7 @@ a:focus {
 /*header section*/
 .hero_area {
   position: relative;
-  background-color: #231f1e;
+  background-color: #292929;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -473,6 +473,7 @@ a:focus {
 
 .service_section .box .detail-box {
   margin-top: 15px;
+  color: #231f1e;
 }
 
 .service_section .box .detail-box h4 {
@@ -668,6 +669,7 @@ a:focus {
   width: 400px;
   padding: 80px 20px 65px 20px;
   background-color: #fff;
+  color: #231f1e;
   border-radius: 25px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
@@ -724,22 +726,6 @@ a:focus {
   color: #ffffff;
 }
 */
-.value_section .value_container .box:nth-child(2n-1) {
-  color: #ffffff;
-}
-
-.value_section .value_container .box:nth-child(2n-1) .detail-box {
-  background-color: #463730;
-}
-
-.value_section .value_container .box:nth-child(2n-1) h6 {
-  color: #ffffff;
-}
-
-.value_section .value_container .box:nth-child(2n-1) a {
-  background-color: #463730;
-  color: #ffffff;
-}
 
 .value_section .value_container .box:hover .detail-box {
   box-shadow: none;
@@ -810,6 +796,7 @@ a:focus {
 
 .team_section .box p {
   margin-top: 25px;
+  color: #231f1e;
 }
 
 .team_section .box .detail-box {
