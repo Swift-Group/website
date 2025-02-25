@@ -565,7 +565,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("/images/blur.jpeg");
+  background-image: url("/images/blur.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 70px;
@@ -603,12 +603,6 @@ a:focus {
 
 .yourProject_section .detail-box .heading_container {
   text-align: left;
-}
-
-.yourProject_section .detail-box .links {
-  
-  display: flex;
-  flex-direction: row;
 }
 
 .yourProject_section .detail-box .default-btn {
@@ -687,7 +681,7 @@ Add here all css for sub page porject
 }
 
 .contact_section .heading_container {
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 
 .contact_section .form_container input {
@@ -730,57 +724,16 @@ Add here all css for sub page porject
           justify-content: center;
 }
 
-.contact_section .form_container button {
-  border: none;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 15px 65px;
-  background-color: #463730;
-  color: #ffffff;
-  border-radius: 0;
-  border: 1px solid #463730;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  font-weight: bold;
-}
-
-.contact_section .form_container button:hover {
-  background-color: transparent;
-  color: #463730;
-}
-
 /* info section */
 .info_section {
   background-color: #231f1e;
   color: #ffffff;
+  padding-bottom: 10px;
 }
 
 .info_section h4 {
   font-weight: 600;
   margin-bottom: 20px;
-}
-
-.info_section .info_contact .contact_link_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.info_section .info_contact .contact_link_box a {
-  margin: 5px 0;
-  color: #ffffff;
-}
-
-.info_section .info_contact .contact_link_box a i {
-  margin-right: 5px;
-}
-
-.info_section .info_contact .contact_link_box a:hover {
-  color: #463730;
 }
 
 .info_section .info_social {
@@ -800,27 +753,17 @@ Add here all css for sub page porject
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #ffffff;
+  color: #000000;
   border-radius: 100%;
   margin-right: 10px;
   font-size: 24px;
 }
 
 .info_section .info_social a:hover {
-  color: #463730;
+  color: #eba812;
+  transition: ease-in-out 0.3s;
 }
 
-.info_section .info_links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
 
 .info_section .info_links a {
   display: -webkit-box;
@@ -829,62 +772,18 @@ Add here all css for sub page porject
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 15px;
-  color: #ffffff;
+  margin-bottom: 15px
 }
 
-.info_section .info_links a img {
-  margin-right: 10px;
-}
+.info_section .fa-brands {
+  color: black;
+  transition: .2s ease-in-out;
+} 
 
-.info_section .info_links a:hover, .info_section .info_links a.active {
+.info_section .fa-brands:hover {
   color: #eba812;
-}
-
-.info_section form input {
-  border: none;
-  border-bottom: 1px solid #ffffff;
-  background-color: transparent;
-  width: 100%;
-  height: 45px;
-  color: #ffffff;
-  outline: none;
-}
-
-.info_section form input::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.info_section form input:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.info_section form input::-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.info_section form input::placeholder {
-  color: #ffffff;
-}
-
-.info_section form button {
-  width: 100%;
-  text-align: center;
-  display: inline-block;
-  padding: 10px 55px;
-  background-color: #463730;
-  color: #ffffff;
-  border-radius: 0;
-  border: 1px solid #463730;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  margin-top: 15px;
-}
-
-.info_section form button:hover {
-  background-color: transparent;
-  color: #463730;
-}
+  transition: .2s ease-in-out;
+} 
 
 /* end info section */
 /* footer section*/
@@ -898,7 +797,7 @@ Add here all css for sub page porject
   color: #ffffff;
   padding: 20px 0;
   margin: 0;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #eba812;
 }
 
 .footer_section p a {
