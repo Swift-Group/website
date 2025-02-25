@@ -284,7 +284,7 @@ a:focus {
   justify-content: center;
   padding-top: 65px;
   padding-bottom: 90px;
-  background-image: linear-gradient(to top, #292929e1, #29292994), url("/images/digit_random.png");
+  background-image: linear-gradient(to top, #292929e1, #29292994), url("images/digit_random.png");
 }
 
 .intro_section .row {
@@ -368,7 +368,7 @@ a:focus {
 /* service section */
 .service_section {
   position: relative;
-  background-image: linear-gradient(to top, #231f1ee1, #231f1e94), url("/images/digit_random.png");
+  background-image: linear-gradient(to top, #231f1ee1, #231f1e94), url("images/digit_random.png");
 }
 
 .service_section .heading_container {
@@ -452,7 +452,7 @@ a:focus {
 /* background: linear-gradient(110deg, transparent 25%, #9e3920 25%); */
 .us_section {
   background-color: #292929;
-  background-image: url("/images/digit_column.png");
+  background-image: url("images/digit_column.png");
   background-position: center;
   padding: 55px 0;
   color: #ffffff;
@@ -473,7 +473,7 @@ a:focus {
 }
 
 .us_section .detail-box {
-  background-image: url("/images/digit_column.png");
+  background-image: url("images/digit_column.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -565,7 +565,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("/images/blur.png");
+  background-image: url("images/blur.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 70px;
