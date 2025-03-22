@@ -1,10 +1,10 @@
 /* Style pour la barre de navigation */
 
-nav { 
+nav {
   display: flex; /* Utilisation de Flexbox pour aligner les éléments */
   align-items: center; /* Alignement vertical des éléments */
   justify-content: space-between; /* Répartition égale des éléments */
-  height: auto;  
+  height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 13px;
@@ -14,18 +14,22 @@ nav {
   background-color: aliceblue; /* Couleur de fond */
 }
 
-nav button { 
+nav button {
   color: #ffffff;
-  padding: 10px; 
-  background-color: rgba(255, 255, 255, 1.0); 
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 1);
   border: 0px none;
   border-radius: 8px; /* Coins arrondis du bouton */
-  background: linear-gradient(90deg, rgba(180, 34, 162, 1) 40%, rgba(87, 24, 154, 1) 100%); /* Dégradé de couleurs */
+  background: linear-gradient(
+    90deg,
+    rgba(180, 34, 162, 1) 40%,
+    rgba(87, 24, 154, 1) 100%
+  ); /* Dégradé de couleurs */
   box-shadow: 0px 4px 11.2px #00000079; /* Ombre portée */
   transition: all 0.3s ease-in-out; /* Effet de transition fluide */
 }
 
-nav button:hover { 
+nav button:hover {
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 4px 11.2px #00000000; /* Suppression de l'ombre au survol */
 }
@@ -75,7 +79,6 @@ nav .nav-link:hover {
 
 /* Fin du style de la barre de navigation */
 
-
 /* Style du pied de page */
 
 footer {
@@ -89,7 +92,8 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
-footer .icons, footer .labels {
+footer .icons,
+footer .labels {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -116,7 +120,6 @@ footer .labels {
 }
 
 /* Fin du style du pied de page */
-
 
 /* Design responsive du menu */
 
@@ -155,7 +158,7 @@ footer .labels {
   footer .labels {
     flex-direction: column; /* Passage en mode colonne pour les labels */
   }
-  
+
   footer .labels .label {
     margin: 15px 0px;
   }
