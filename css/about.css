@@ -109,27 +109,33 @@ body {
 }
 
 /* Section equipe */
-
+/* Conteneur principal */
 .section-equipe {
   position: relative;
   padding: 40px 0;
   text-align: center;
+  background-color: #ffffff; /* Fond blanc */
+  margin: 20px;
+  overflow: hidden; /* Pour gérer les cercles décoratifs */
 }
 
+/* Titre principal */
 .section-equipe h2 {
   font-size: 32px;
   font-weight: 700;
-  color: #000000;
+  color: #8a307f; /* Violet */
   margin-bottom: 20px;
 }
 
+/* Sous-titre */
 .section-equipe p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   color: #000000;
   margin-bottom: 40px;
 }
 
+/* Grille des membres */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -137,44 +143,46 @@ body {
   justify-content: center;
 }
 
+/* Membre de l'équipe */
 .team-member {
   text-align: center;
+  position: relative;
 }
 
+/* Conteneur pour l'SVG */
+.member-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Image SVG de fond */
+.member-background {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Placer l'SVG derrière l'image du membre */
+}
+
+/* Image du membre */
 .member-image {
   width: 150px;
   height: 150px;
   overflow: hidden;
   border-radius: 50%;
   margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre pour effet 3D */
 }
 
 .member-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
+/* Nom du membre */
 .team-member h3 {
   font-size: 20px;
   font-weight: 700;
   color: #000000;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-
-.team-member p {
-  font-size: 16px;
-  font-weight: 400;
-  color: #8a307f;
-}
-
-.decorative-background {
-  position: absolute;
-  bottom: -100px;
-  left: 0;
-  width: 100%;
-  height: 200px;
-
-  z-index: -1;
 }
