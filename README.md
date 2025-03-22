@@ -1,30 +1,27 @@
-# Swift - Développement Informatique
+# Dernières modifications par rapport au projet initial
 
-Bienvenue sur le dépôt GitHub officiel du projet **Swift** !  
-Ce projet est dédié à la création et au déploiement de solutions web innovantes. Ce dépôt contient le code source et la documentation pour notre site web.
+## 📌 Modifications :
 
-## 🚀 À propos de Swift
-Swift est une startup basée à Strasbourg, spécialisée dans le développement informatique. Nous créons des solutions sur mesure pour répondre aux besoins de nos clients dans un environnement technologique en constante évolution.
+- **`index.html`** : Mise à jour du footer et du header.  
+- **`styles.css`** : Ajout du CSS pour le header et le footer.  
+  - 🔹 *Note* : La section responsive est toujours dans ce fichier en vue d’une éventuelle restructuration pour .NET.  
+- **`globals.css`** : Ajout de certaines propriétés par défaut pour le site *(voir commentaires dans le code)*.  
+- **`styleguide.css`** : Inchangé par rapport au code généré par Figma.  
+- **`custom.js`** : Ajout de fonctions pour l’animation du menu de navigation.  
+- **`icons`** : Légères modifications des icônes des réseaux sociaux en raison de dimensions incorrectes.  
 
-Notre site web sert de vitrine pour nos services, nos projets, et notre expertise. Il est conçu pour être performant, accessible et facile à maintenir.
+## ❌ Suppressions :
 
-## ✨ Fonctionnalités principales
-- **Page d'accueil** présentant nos services et nos projets.
-- **Formulaire de contact** pour faciliter les interactions avec nos clients.
+- **Dossier `image/`** → Remplacé par **`img/`**.  
+- **Dossier `video/`** → Supprimé.  
+- **Fichier `style.scss`** → Je ne sais pas vraiment à quoi ca servait. Si nécessaire, il faudra le récupérer dans une ancienne version git du projet.  
+- **Dossier `fonts/`** → Supprimé.  
 
-## 🛠️ Technologies utilisées
-- **Frontend** : HTML5, CSS3 et JavaScript
-- **API** : Bootstrap, Font awesome
-- **CI/CD** : GitHub Actions
+## 🔧 À modifier pour ce code :  
 
-## 📝 Licence et droits
-
-Tous les droits relatifs à ce projet sont réservés à **Swift**.  
-Ce projet est distribué sous une **Licence Propriétaire stricte**. Toute utilisation, reproduction, modification ou distribution sans autorisation explicite de **Swift** est interdite.
-
-### Termes de la licence
-- **Usage interne uniquement** : Le code contenu dans ce dépôt est réservé à un usage interne ou dans le cadre d’un partenariat contractuel avec **Swift**.
-- **Reproduction interdite** : Aucun contenu (code, design, ou autres ressources) ne peut être reproduit, distribué ou utilisé commercialement sans l'autorisation écrite de **Swift**.
-- **Propriété intellectuelle** : Toutes les créations, idées, et produits dérivés basés sur ce dépôt restent la propriété exclusive de **Swift**.
-
-Pour toute demande ou clarification concernant l'utilisation de ce projet, veuillez contacter l'équipe à l'adresse suivante : [ange2michel@gmail.com](mailto:ange2michel@gmail.com).
+- 📁 **Réorganisation de la structure des fichiers et du code** *(notamment le code responsive, à vérifier avec la compatibilité avec structure .NET si nécessaire).*  
+- 📝 **Section "content" dans `index.html`** et son style correspondant dans `styles.css`.  
+- ⚡ **Ajout de fonctions JavaScript** *(si besoin ou inspiration)*.  
+- 🏷️ **Renommage des fichiers** pour correspondre à la nouvelle maquette.  
+- 🔗 **Mise à jour des liens de navigation** pour refléter les changements de fichiers.  
+- 😉 **Vos code pour le `RandomBody()`**

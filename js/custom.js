@@ -1,46 +1,32 @@
-// to get current year
-function getYear() {
-    var currentDate = new Date();
-    var currentYear = currentDate.getFullYear();
-    document.querySelector("#displayYear").innerHTML = currentYear;
+
+function InitNavbarAnimation() {
+    window.addEventListener("scroll", function () {
+        let navbar = document.getElementById("navbar");
+        let header_container = document.querySelector(".header .container");
+        
+        if (window.scrollY > 70) {
+            if(this.window.innerWidth < 768) {
+                navbar.classList.remove("sticky-nav");
+                header_container.classList.add("container-mobile");
+                navbar.classList.add("navbar-mobile");
+            } else {
+                navbar.classList.add("sticky-nav");
+            }
+        } else {
+            if(this.window.innerWidth < 768) {
+                header_container.classList.remove("container-mobile");
+                navbar.classList.remove("navbar-mobile");
+            } else {
+                navbar.classList.remove("sticky-nav");
+            }
+        }
+
+    });
 }
 
-getYear();
+function initialize() {
+    InitNavbarAnimation();
+}
 
-// nice select
-$(document).ready(function () {
-    $('select').niceSelect();
-});
-
-// date picker
-$(function () {
-    $("#inputDate").datepicker({
-        autoclose: true,
-        todayHighlight: true
-    }).datepicker('update', new Date());
-});
-
-// owl carousel slider js
-$('.team_carousel').owlCarousel({
-    loop: true,
-    margin: 15,
-    dots: true,
-    autoplay: true,
-    navText: [
-        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-    ],
-    autoplayHoverPause: true,
-    responsive: {
-        0: {
-            items: 1,
-            margin: 0
-        },
-        576: {
-            items: 2,
-        },
-        992: {
-            items: 3
-        }
-    }
-})
+// Exécution de la fonction initialize après le chargement complet du DOM
+document.addEventListener("DOMContentLoaded", initialize);
