@@ -8,48 +8,39 @@
   </head>
   <body>
     <!-- Header section containing the navigation bar -->
-    <div class="header">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1440"
-        height="636"
-        viewBox="0 0 1440 636"
-        fill="none"
-      >
-        <path
-          d="M-9.22121 -3.46409C-7.46608 -7.78942 -5.98776 -11.3283 -4.85361 -14H1480V500.929C1478.4 501.306 1476.57 501.739 1474.49 502.225C1465.87 504.243 1453.16 507.169 1436.87 510.794C1404.28 518.043 1357.34 528.084 1299.97 539.243C1185.22 561.564 1028.82 588.339 862.17 606.185C695.454 624.037 518.818 632.914 363.47 619.578C207.686 606.205 75.2543 570.632 -4.87473 501.258C-45.5767 466.019 -66.3541 416.615 -74.2103 361.226C-82.0759 305.77 -76.8676 245.019 -66.2066 188.315C-55.5597 131.686 -39.5694 79.5799 -26.2164 41.5907C-19.5451 22.6111 -13.545 7.19149 -9.22121 -3.46409Z"
-          fill="#2E0249"
-          stroke="#DB29C4"
-          stroke-width="20"
-        />
-      </svg>
-      <nav class="navbar">
-        <div class="logo-container">
-          <img
-            class="logo"
-            src="https://c.animaapp.com/xyczBGDQ/img/logo---5--1-1@2x.png"
-            alt="Logo Swift"
-          />
-        </div>
-        <ul class="menu">
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Notre entreprise</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-        <button class="contact-btn">Contactez-nous</button>
-      </nav>
-      <section class="hero-section">
-        <h1 class="title">D'où vient <span class="highlight">Swift</span> ?</h1>
-        <p class="description">
-          Comme chaque entreprise, la nôtre a aussi sa propre histoire. Swift
-          est le fruit de la création de
-          <strong>six jeunes entrepreneurs voulant faire</strong> valoir et
-          exprimer leurs compétences dans le but d'aider et d'améliorer la
-          digitalisation et la présence en ligne des clients.
-        </p>
+    <header class="header">
+      <section class="container">
+        <nav id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-logo" href="index.html"
+                ><img src="img/logo_name.png" alt="logo de swift"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project.html">Nos entreprises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+          </ul>
+          <div class="nav-item" id="nav-btn">
+            <a href="contact.html"
+              ><button type="button">Contactez-nous</button></a
+            >
+          </div>
+        </nav>
       </section>
-    </div>
+    </header>
+
+    <!-- end header -->
+
     <p style="text-align: center; color: red; font-weight: bold">Fin header</p>
     <hr />
 
@@ -179,6 +170,50 @@
       Fin section-equipe
     </p>
     <hr />
+    <!-- footer -->
+
+    <footer>
+      <div class="container">
+        <section class="icons">
+          <div>
+            <img class="logo" src="img/logo_name.png" alt="logo de swift" />
+          </div>
+          <div class="network">
+            <img
+              class="icon icon-instagram"
+              src="img/instagram.png"
+              alt="icon d'instagram"
+            />
+            <img
+              class="icon icon-x-twitter"
+              src="img/x_twitter.png"
+              alt="icon de x"
+            />
+            <img
+              class="icon icon-linkedin"
+              src="img/linkedin.png"
+              alt="icon de linkedin"
+            />
+          </div>
+        </section>
+        <section class="labels">
+          <a class="label">&copy; Tous droits réservés 2025</a>
+          <a class="label">Mentions Légales</a>
+          <a class="label" href="maito:swiftdev@gmail.com"
+            >swiftdev@gmail.com</a
+          >
+        </section>
+      </div>
+    </footer>
+
+    <!-- end footer -->
+
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
   </body>
 </html>
 
