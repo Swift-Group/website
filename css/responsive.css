@@ -1,6 +1,8 @@
-@media (max-width: 1300px) {}
+@media (max-width: 1300px) {
+}
 
-@media (max-width: 1120px) {}
+@media (max-width: 1120px) {
+}
 
 @media (max-width: 992px) {
   .hero_area {
@@ -21,7 +23,6 @@
     margin-top: 10px;
   }
 
-
   .team_section .box {
     margin: 15px;
   }
@@ -40,7 +41,7 @@
     height: 45px;
   }
 
-  .info_section .info_main_row>div {
+  .info_section .info_main_row > div {
     margin-bottom: 25px;
   }
 }
@@ -49,7 +50,6 @@
   .about_section .detail-box {
     margin-bottom: 45px;
   }
-
 
   .service_section .row .service_col_middle {
     order: 2;
@@ -73,7 +73,7 @@
     margin-bottom: 45px;
   }
 
-  .info_section .row>div {
+  .info_section .row > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,8 +87,6 @@
 }
 
 @media (max-width: 576px) {
-
-
   .team_section .box {
     flex-direction: column;
     align-items: center;
@@ -96,7 +94,6 @@
 
   .team_section .box .detail-box {
     padding: 85px 45px 45px 45px;
-
   }
 
   .team_section .box .img-box {
@@ -105,11 +102,14 @@
   }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+}
 
-@media (max-width: 420px) {}
+@media (max-width: 420px) {
+}
 
-@media (max-width: 376px) {}
+@media (max-width: 376px) {
+}
 
 @media (min-width: 1200px) {
   .container {

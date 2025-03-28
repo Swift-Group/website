@@ -1,10 +1,9 @@
 :root {
-    --d-9d-9d-9: rgba(217, 217, 217, 1);
-    --h1-font-family: "Outfit", Helvetica;
-    --h1-font-weight: 700;
-    --h1-font-size: 40px;
-    --h1-letter-spacing: 0px;
-    --h1-line-height: 60px;
-    --h1-font-style: normal;
-  }
-  
+  --d-9d-9d-9: rgba(217, 217, 217, 1);
+  --h1-font-family: "Outfit", Helvetica;
+  --h1-font-weight: 700;
+  --h1-font-size: 40px;
+  --h1-letter-spacing: 0px;
+  --h1-line-height: 60px;
+  --h1-font-style: normal;
+}
