@@ -49,11 +49,12 @@ nav .nav-item {
 }
 
 nav .nav-link {
+  color: #2e0249; /* Couleur du texte */
   transition: 0.3s ease-in-out; /* Effet fluide pour les interactions */
 }
 
 nav .nav-link:hover {
-  color: #2e0249; /* Changement de couleur au survol */
+  color: #b868e9; /* Changement de couleur au survol */
   transform: scale(1.2); /* Agrandissement au survol */
   transition: 0.3s ease-in-out;
 }

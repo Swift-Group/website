@@ -13,75 +13,9 @@ body {
 .header {
   position: relative;
   overflow: hidden;
-  min-height: 636px; /* Hauteur minimale pour contenir le SVG */
-}
-
-.header svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Placer derrière le contenu du header */
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  max-width: 1440px;
-}
-
-.logo {
-  width: 136px;
-  height: 36px;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: #000000d9;
-  font-size: 20px;
-  font-weight: 400;
-  transition: color 0.3s ease;
-}
-
-.menu li a:hover {
-  color: #a91079;
-}
-
-.contact-btn {
-  padding: 10px 20px;
-  border-radius: 8px;
-  background: linear-gradient(
-    90deg,
-    rgba(180, 34, 162, 1) 40%,
-    rgba(87, 24, 154, 1) 100%
-  );
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 400;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.contact-btn:hover {
-  background: linear-gradient(
-    90deg,
-    rgba(180, 34, 162, 0.8) 40%,
-    rgba(87, 24, 154, 0.8) 100%
-  );
+  min-height: 100vh; /* Hauteur minimale pour contenir le SVG */
+  background: url("./images/pageAbout/Rectangle_header.svg") no-repeat center
+    center/cover;
 }
 
 .hero-section {
@@ -92,7 +26,7 @@ body {
   z-index: 1; /* Assurer que le contenu est au-dessus du SVG */
 }
 
-.title {
+.title-s1 {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -121,10 +55,14 @@ body {
 
 /* Titre principal */
 .section-equipe h2 {
-  font-size: 32px;
+  font-size: 36px; /* taille lisible et proche du design Figma */
   font-weight: 700;
-  color: #8a307f; /* Violet */
+  line-height: 1.3;
   margin-bottom: 20px;
+  color: #000000;
+  width: 1076px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Sous-titre */
@@ -185,4 +123,204 @@ body {
   font-size: 20px;
   font-weight: 700;
   color: #000000;
+}
+
+/* Section 3 */
+
+.decorative-background {
+  width: 100%;
+  height: auto; /* Permet au conteneur de s'adapter à la hauteur du SVG */
+  overflow: hidden;
+  position: relative;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Assure que le SVG conserve ses proportions */
+}
+
+@media (max-width: 1440px) {
+  .decorative-background {
+    max-width: 100%;
+  }
+}
+
+.centered-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  max-width: 1312px; /* aligné sur la largeur du <p> */
+  padding: 20px;
+  z-index: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+.centered-content h2 {
+  font-size: 36px; /* taille lisible et proche du design Figma */
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  width: 1076px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered-content .highlight {
+  color: #db29c4;
+}
+
+.centered-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  width: 1312px;
+  margin: 0 auto;
+  margin-bottom: 6%;
+}
+
+.cta-button {
+  color: #ffffff;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 0px none;
+  border-radius: 8px; /* Coins arrondis du bouton */
+  background: linear-gradient(
+    90deg,
+    rgba(180, 34, 162, 1) 40%,
+    rgba(87, 24, 154, 1) 100%
+  ); /* Dégradé de couleurs */
+  box-shadow: 0px 4px 11.2px #00000079; /* Ombre portée */
+  transition: all 0.3s ease-in-out; /* Effet de transition fluide */
+}
+
+.cta-button:hover {
+  background-color: #a61f9f;
+}
+
+/* Section mission */
+
+.mission-section {
+  padding: 60px 0;
+}
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 5%;
+}
+
+.text-side {
+  flex: 1;
+}
+
+.image-side {
+  flex: 1;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.highlight {
+  color: #bb1ea7;
+}
+
+.line-after-title,
+.line-after-link {
+  height: 1px;
+  background-color: black;
+  flex-grow: 1;
+}
+
+.title-with-line {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #000000;
+}
+
+.line-after-title {
+  flex-grow: 1;
+  height: 1px;
+  background-color: black;
+}
+
+.description-mission {
+  margin-bottom: 24px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.cta-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cta-link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  color: #bb1ea7;
+  text-decoration: none;
+}
+
+.cta-arrow {
+  margin-left: 8px;
+}
+
+.image-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 500px; /* ajustable selon ton layout */
+}
+
+.image-container {
+  position: relative;
+  width: 437px;
+  height: 437px;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 20px; /* optionnel pour un arrondi stylé */
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* garde l’image bien centrée et remplie */
+  border-radius: 20px; /* même arrondi si tu l’as ajouté au container */
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.4;
+  background-color: rgba(0, 0, 0, 0.5); /* lisibilité du texte */
+  padding: 8px 12px;
+  border-radius: 8px;
+  max-width: 90%;
 }

@@ -1,55 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Basic -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Mobile Metas -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <!-- Site Metas -->
     <link
       rel="icon"
       href="img/fav_icon.png"
       type="image/gif"
       alt="logo de swift"
     />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-
     <title>swift</title>
-
-    <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-    <!-- fonts style -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
-    <!-- font awesome style -->
     <link href="css/font-awesome.min.css" rel="stylesheet" />
-
-    <!-- Custom styles -->
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/styleguide.css" />
     <link rel="stylesheet" href="css/styleGlobal.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
-
   <body>
-    <!-- header -->
     <header class="header">
       <section class="container">
         <nav id="navbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-logo" href="index.html"
-                ><img src="img/logo_name.png" alt="logo de swift"
-              /></a>
+              <a class="nav-logo" href="index.html">
+                <img src="img/logo_name.png" alt="logo de swift" />
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html">Accueil</a>
@@ -71,14 +55,26 @@
           </div>
         </nav>
       </section>
+      <section class="hero-section">
+        <h1 class="title-s1">
+          D'où vient <span class="highlight">Swift</span> ?
+        </h1>
+        <p class="description">
+          Comme chaque entreprise, la nôtre a aussi sa propre histoire. Swift
+          est le fruit de la création de
+          <strong>six jeunes entrepreneurs voulant faire</strong> valoir et
+          exprimer leurs compétences dans le but d'aider et d'améliorer la
+          digitalisation et la présence en ligne des clients.
+        </p>
+      </section>
     </header>
 
-    <p style="text-align: center; color: red; font-weight: bold">Fin header</p>
-    <hr />
+    <!-- <p style="text-align: center; color: red; font-weight: bold">Fin header</p>
+    <hr /> -->
 
     <!-- Section equipe -->
     <section class="section-equipe">
-      <h2>Notre équipe</h2>
+      <h2>Notre <span style="color: purple">équipe</span></h2>
       <p>Une équipe qui mettra ses compétences à votre service !</p>
 
       <div class="team-grid">
@@ -198,12 +194,105 @@
         </div>
       </div>
     </section>
-    <p style="text-align: center; color: red; font-weight: bold">
+    <!-- <p style="text-align: center; color: red; font-weight: bold">
       Fin section-equipe
     </p>
-    <hr />
-    <!-- footer -->
+    <hr /> -->
 
+    <div class="decorative-background">
+      <svg
+        class="background-image"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 490"
+        fill="none"
+      >
+        <path
+          d="M-14.6162 73.1443C73.9542 21.6392 921.57 -61.8333 1461.69 73.1443C2001.81 208.122 2313.38 316.725 1461.69 436.684C609.997 556.644 81.7546 436.684 -14.6162 436.684C-110.987 436.684 -103.187 124.649 -14.6162 73.1443Z"
+          fill="url(#paint0_linear_964_1169)"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear_964_1169"
+            x1="965.59"
+            y1="54.3523"
+            x2="965.59"
+            y2="451.166"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#2E0249" />
+            <stop offset="1" stop-color="#442656" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <div class="centered-content">
+        <h2>
+          Vous souhaitez vous faire accompagner par
+          <span class="highlight">notre équipe?</span>
+        </h2>
+        <p>
+          Si vous souhaitez nous faire part de vos <strong>projets web</strong>,
+          en savoir un peu plus sur notre agence ou simplement vous renseigner,
+          rien de plus simple que de renseigner le formulaire de contact. <br />
+          Nous reviendrons vers vous dans les plus brefs délais pour planifier
+          un rendez-vous.
+        </p>
+        <button class="cta-button">Contactez-nous</button>
+      </div>
+    </div>
+    <!-- <p style="text-align: center; color: red; font-weight: bold">
+      Fin section renseignements
+    </p>
+    <hr /> -->
+
+    <section class="mission-section">
+      <div class="mission-content">
+        <div class="text-side">
+          <div class="title-with-line">
+            <h2 class="title">Notre <span class="highlight">mission</span></h2>
+            <div class="line-after-title"></div>
+          </div>
+
+          <p class="description-mission">
+            Notre ambition est claire : accélérer la croissance de votre
+            entreprise grâce à des solutions web performantes et innovantes.
+            Nous aidons nos clients à se démarquer sur le digital, à attirer
+            plus de prospects et à convertir leur audience en clients fidèles.
+          </p>
+
+          <div class="cta-wrapper">
+            <a href="#services" class="cta-link">
+              Découvrir nos services
+              <img
+                src="https://c.animaapp.com/0r2Eh6xX/img/arrow-8.svg"
+                alt="Arrow"
+                class="cta-arrow"
+              />
+            </a>
+            <div class="line-after-link"></div>
+          </div>
+        </div>
+
+        <div class="image-side">
+          <div class="image-container">
+            <img
+              src="https://c.animaapp.com/0r2Eh6xX/img/nest@2x.png"
+              alt="Illustration"
+              class="main-image"
+            />
+            <div class="overlay-text">
+              <p>
+                <em>
+                  Nous ne nous contentons pas de créer des sites web, nous
+                  <strong>construisons des expériences</strong>
+                </em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
     <footer>
       <div class="container">
         <section class="icons">
