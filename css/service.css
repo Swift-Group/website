@@ -185,7 +185,7 @@ main{
 /* begin developpement web */
 .developpement-box{
   position: relative;
-  top: 15vh;
+  top: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -507,4 +507,197 @@ footer .labels {
     align-items: center;
     text-align: center;
     font-size: xxx-large;
+}
+
+
+/*################# Responsive Design #####################*/
+
+@media (max-width: 768px) {
+  html{
+    font-size: 56%;
+  }
+
+  body, p{
+    font-size: 1.5rem;
+    width: auto;
+  }
+
+  .header{
+    width: auto;
+  }
+  .about_section .detail-box {
+    margin-bottom: 45px;
+  }
+
+
+  .service_section .row .service_col_middle {
+    order: 2;
+  }
+
+  .service_section .service_col_middle .box {
+    margin-bottom: 45px;
+  }
+
+  .quote_section {
+    background: none;
+    background-color: #231f1e;
+  }
+
+  .quote_section .img-box {
+    margin-bottom: 25px;
+  }
+
+  .contact_section .form_container {
+    margin-right: 0;
+    margin-bottom: 45px;
+  }
+
+  .info_section .row>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .info_section .info_links {
+    align-items: center;
+  }
+
+  html{
+    font-size: 56%;
+  }
+
+  body, p{
+    font-size: 1.5rem;
+    width: auto;
+  }
+
+  .header{
+    width: auto;
+  }
+}
+
+@media (max-width: 576px) {
+
+
+  .team_section .box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team_section .box .detail-box {
+    padding: 85px 45px 45px 45px;
+
+  }
+
+  .team_section .box .img-box {
+    margin-right: 0;
+    margin-bottom: -65px;
+  }
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 420px) {
+
+  .presentation{
+    font-size: 1.5rem;
+    position: relative;
+    left: -2rem
+  }
+
+  .service-title{
+    position: inherit;
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  .fond{
+    width: 50%
+  }
+  .pin,
+  .pin2{
+    width : 25%;
+  }
+
+  .conseil-box,
+  .support-box,
+  .developpement-box{
+    top: 4vh;
+    display: inline-block;
+  }
+
+  .heading-support,
+  .heading-developpement{
+    left: 30%;
+    bottom: auto;
+    transform: rotate(0deg);
+    width: 23vh;
+  }
+
+  .heading-conseil{
+    left: 23%;
+    bottom: auto;
+    transform: rotate(0deg);
+    width: 23vh;
+  }
+  
+  .support-description,
+  .developpement-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    left: 2rem;
+    width: 86vw;
+  }
+
+  .conseil-content
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .conseil-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    left: 2rem;
+    width: 86vw;
+  }
+
+  .btn{
+    position: relative;
+    width: 54%;
+    left: 24%;
+    font-size: 1.5rem;
+  }
+
+  .img-html img{
+    position: relative;
+    left: 1rem;
+    width: 90%;
+  }
+
+  .img-conseil img{
+    position: relative;
+    width: 90%;
+    left: 23%;
+  }
+
+  .avant-footer img{
+    width: 20%;
+  }
+
+}
+@media (max-width: 376px) {}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
 }

@@ -1,0 +1,925 @@
+/* Style pour la barre de navigation */
+
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+nav { 
+  display: flex; /* Utilisation de Flexbox pour aligner les éléments */
+  align-items: center; /* Alignement vertical des éléments */
+  justify-content: space-between; /* Répartition égale des éléments */
+  height: auto;  
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 13px;
+  border-radius: 20px; /* Coins arrondis */
+  border: 0px none; /* Pas de bordure */
+  box-shadow: 0px 4px 11.2px #1b1b1b40; /* Ombre portée pour un effet en relief */
+  background-color: aliceblue; /* Couleur de fond */
+}
+
+button { 
+  color: #ffffff;
+  padding: 10px; 
+  background-color: rgba(255, 255, 255, 1.0); 
+  border: 0px none;
+  border-radius: 8px; /* Coins arrondis du bouton */
+  background: linear-gradient(90deg, rgba(180, 34, 162, 1) 40%, rgba(87, 24, 154, 1) 100%); /* Dégradé de couleurs */
+  box-shadow: 0px 4px 11.2px #1b1b1b79; /* Ombre portée */
+  transition: all 0.3s ease-in-out; /* Effet de transition fluide */
+}
+
+button:hover { 
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 11.2px #1b1b1b00; /* Suppression de l'ombre au survol */
+}
+
+nav .navbar-nav {
+  width: 70%; /* Largeur de la zone de navigation */
+  display: flex;
+  flex-direction: row; /* Disposition horizontale */
+  justify-content: space-between; /* Espacement uniforme des éléments */
+}
+
+nav .nav-item {
+  display: flex;
+  align-items: center; /* Centrage vertical des éléments */
+}
+
+nav .nav-link {
+  transition: 0.3s ease-in-out; /* Effet fluide pour les interactions */
+}
+
+nav .nav-link:hover {
+  color: #2e0249; /* Changement de couleur au survol */
+  transform: scale(1.2); /* Agrandissement au survol */
+  transition: 0.3s ease-in-out;
+}
+
+#navbar {
+  transition: 0.3s ease-in-out; /* Effet de transition pour l'animation */
+}
+
+.sticky-nav {
+  color: #ffffff;
+  background-color: #2e0249; /* Fond coloré pour la navigation collante */
+  position: fixed; /* Fixation en haut de l'écran */
+  border-radius: 0px;
+  padding: 7px 10px;
+  top: 0;
+  left: 0;
+  width: 100%; /* Occupe toute la largeur de l'écran */
+  margin-top: 0px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Ombre pour plus de visibilité */
+}
+
+.sticky-nav .nav-link:hover {
+  color: #ffffff; /* Couleur du texte au survol */
+}
+
+/* Fin du style de la barre de navigation */
+
+
+/* Style du pied de page */
+
+footer {
+  display: flex;
+  flex-direction: column; /* Disposition verticale des éléments */
+  padding: 40px 8vw;
+  background-color: #ffffff;
+  color: #222222;
+  font-size: 1.2em;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .icons, footer .labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .icons {
+  padding-bottom: 10px;
+}
+
+footer .icons .network {
+  display: flex;
+  flex-direction: row; /* Répartition horizontale des icônes */
+}
+
+footer .icons .network .icon {
+  margin: 5px; /* Espacement autour des icônes */
+}
+
+footer .labels {
+  border-top: 2px solid #222222; /* Ligne de séparation */
+  padding-top: 20px;
+  font-size: 0.8em;
+}
+
+/* Fin du style du pied de page */
+
+
+/** ################################################################################################### */
+
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+/* Design responsive du menu */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Passage en mode colonne pour les petits écrans */
+    align-items: center;
+  }
+
+  nav .navbar-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .nav-item {
+    margin-top: 10px;
+  }
+
+  .container-mobile {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .navbar-mobile {
+    padding-bottom: 10px;
+    margin: 0%;
+    color: #ffffff;
+    background-color: #2e0249;
+    border-radius: 0px;
+    width: 100vw;
+  }
+
+  /* Design responsive pour le pied de page */
+  footer .labels {
+    flex-direction: column; /* Passage en mode colonne pour les labels */
+  }
+  
+  footer .labels .label {
+    margin: 15px 0px;
+  }
+
+  main .hero {
+    padding-top: 372px;
+  }
+
+  main .hero .hero-content {
+    padding-top: 20px !important;
+  }
+
+  main .hero .hero-content .hero-buttons button {
+    margin: 10px;
+  }
+
+  main .hero .hero-list, main .hero .hero-buttons,
+  main .techno .techno-content .techno-list {
+    flex-direction: column !important;
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  main .container {
+    flex-direction: column;
+  }
+
+  main .hero .hero-content {
+    width: 100% !important;
+  }
+
+  main .hero .hero-img {
+    display: none;
+  }
+
+  main .hero .hero-list {
+    justify-content: center;
+    align-items: center;
+  }
+
+  main #why-arrow-1,
+  main #why-arrow-2 {
+    display: none;
+  }
+
+  main .us .img {
+    display: none !important;
+  }
+
+  main .project .container {
+    flex-direction: column !important;
+    padding-top: 50px;
+  }
+
+
+  main .boost,
+  main .seo .seo-content {
+    flex-direction: column !important;
+  }
+
+}
+
+/** ################################################################################################### */
+
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+/* Hero section */
+main {
+  margin: 0px 0%;
+  overflow: hidden;
+}
+
+main .violet-text {
+  color: #63218b;
+}
+
+main .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .hero .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+main .hero .hero-content {
+  align-items: center;
+  padding-top: 150px;
+}
+
+main .hero .hero-img img {
+  position: relative;
+  width : 110%;
+}
+
+main .hero h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #1b1b1b;
+  margin-bottom: 20px;
+}
+
+main .hero .hero-list {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px;
+  list-style-type: none;
+  padding: 0px;
+}
+
+main .hero .hero-list .hero-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0px 10px;
+  font-size: small;
+}
+
+main .hero .hero-list a:hover {
+  text-decoration: none;
+  color: #2e0249;
+}
+
+main .hero .hero-list .hero-link label, main .hero .hero-list .hero-link img {
+  transition: all 0.3s ease-in-out;
+}
+main .hero .hero-list .hero-link:hover img {
+  transform: rotate(-15deg) translate(-.7em, 0em);
+  transition: all 0.3s ease-in-out;
+}
+main .hero .hero-list .hero-link:hover label {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+main .hero .hero-list .hero-link .hero-icon {
+  padding: 10px;
+}
+
+main .hero .hero-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+}
+
+
+main .hero .button-type-two {
+  color: #1b1b1b;
+  background: rgba(255, 255, 255, 1.0);
+  border: #63218b 2px solid !important;
+}
+
+
+/** ################################################################################################### */
+
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+
+main .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  min-height: 200px;
+}
+
+main .service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  text-align: center;
+}
+
+main .service .service-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+
+main .service .service-title h1 {
+  font-weight: 700;
+  font-size: x-large;
+
+  padding: 10px; 
+  margin: 10px;
+  border-radius: 8px; /* Coins arrondis du bouton */
+
+  color: #1b1b1b;
+  background-color: rgba(255, 255, 255, 1.0); 
+  border: #63218b 2px solid;
+}
+
+main .service .service-title .line {
+  border-top: #63218b 2px solid;
+}
+
+main .service .service-deciption {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: auto;
+}
+
+main .service .service-content .service-carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+main .service .service-content .service-carousel .service-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: absolute;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 11.2px #1b1b1b40;
+  background-color: #ffffff;
+
+  color: #1b1b1b;
+  
+  width: 500px;
+  height: auto;
+}
+
+main .service .service-content .service-carousel .service-card:nth-child(2n) {
+  color: #ffffff;
+  background-color: #A9339A;
+}
+
+main .service .service-content .service-carousel .service-card .service-card-content {
+  padding: 40px 40px 0 40px;
+}
+main .service .service-content .service-carousel .service-card .service-card-button {
+  padding: 40px 0 0 40px;
+}
+
+main .service .service-content .service-carousel .service-card h2 {
+  font-weight: 700;
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+main .service .service-content .service-carousel .service-card-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main .service .service-content .service-carousel .service-card button {
+  width: 50%;
+  height: fit-content;
+}
+
+main .service .service-content .service-carousel .service-card img {
+  position: relative;
+  border-radius: 20px;
+  width: 50%;
+}
+
+main .service .service-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+main .service .service-nav .arrow-nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 700;
+  font-size: x-large;
+
+  padding: 10px; 
+  margin: 10px;
+  border-radius: 8px; /* Coins arrondis du bouton */
+
+  color: #1b1b1b;
+}
+
+main .service .service-nav .line {
+  border-top: #63218b 2px solid;
+}
+
+main .service .service-nav .dots {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+main .service .service-nav .dots .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #63218b;
+  margin: 10px;
+}
+
+main .service .service-nav .dots .active {
+  background-color: #ffffff;
+  border: #63218b 2px solid;
+}
+
+
+
+/** ################################################################################################### */
+
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+
+
+main .why {
+  min-height: 1900px;
+  width: 100%;
+  padding: 50px;
+  background-color: #2e0249;
+  color: #ffffff;
+}
+
+
+main .container {
+  position : relative;
+}
+
+main .why #why-title h1 {
+  font-size: 2.2em;
+  font-weight: 900;
+}
+
+main .why .box-title {
+  font-weight: 700;
+  font-size: x-large;
+
+  border-radius: 8px;
+  
+  display: inline-flex;
+  transform: rotate(-3.804deg);
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffffff;
+  background: linear-gradient(90deg, #A9339A 0%, #DB29C4 100%);
+
+}
+
+main .why section,
+main .why img {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+}
+
+main .why #why-title {
+  position: relative;
+  width: 100%;
+}
+
+main .why #why-transparency {
+  margin: 20px 0px;
+  width: 40%;
+  top: 230px;
+  left: 10%
+}
+
+main .why #why-transparency-img {
+  width: 50%;
+  left: 50%;
+}
+
+main .why #why-arrow-1 {
+  width: 37%;
+  left: 30%;
+  top: 530px;
+}
+
+main .why #why-collaboration {
+  width: 37%;
+  left: 50%;
+  top: 800px;
+}
+
+main .why #why-collaboration-img {
+  width: 50%;
+  left: 0;
+  top: 660px
+}
+
+main .why #why-arrow-2 {
+  width: 37%;
+  left: 30%;
+  top: 1100px;
+}
+
+main .why #why-innovation {
+  width: 37%;
+  left: 10%;
+  top: 1400px;
+}
+
+main .why #why-innovation-img {
+  width: 50%;
+  left: 50%;
+  top: 1260px;
+}
+
+
+
+/** ################################################################################################### */
+
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+
+
+main .boost {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+main .boost .boost-content {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0px;
+  min-height: 200px;
+}
+
+main .boost .boost-content h1 {
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+main .boost .boost-content p {
+  font-size: large;
+}
+
+main .boost .boost-content .boost-know-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-top: 20px;
+  color: #A9339A;
+  border-bottom: #A9339A 2px solid;
+  width: fit-content;
+}
+main .boost .boost-content .boost-know-more img {
+  margin-left: 10px;
+  transform: translateY(3px);
+}
+
+
+
+
+/** ################################################################################################### */
+
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+
+
+
+main .seo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+main .seo .seo-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .seo .seo-header .seo-label {
+  display: flex;
+  flex-direction: row;
+  font-weight: bolder;
+}
+
+main .seo .seo-header .seo-title {
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+main .seo .seo-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+main .seo .seo-text {
+  margin: 10px 0;
+}
+
+main .seo .seo-content .seo-desciption h1 {
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+main .seo .seo-content .seo-desciption .seo-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  border-radius: 25px;
+  border: #1b1b1b 1px solid;
+  margin: 20px 0;
+}
+
+main .seo .seo-content .seo-desciption .seo-search .placeholder{
+  border-radius: 25px;
+  padding-left: 15px;
+}
+
+main .seo .seo-content .seo-desciption .seo-search button {
+  border-radius: 25px;
+  box-shadow: none;
+}
+main .seo .seo-content .seo-desciption .seo-search:hover {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 11.2px #1b1b1b40;
+}
+main .seo .seo-content .seo-desciption .seo-search:hover button {
+  animation: slide-animation 1s ease-in-out infinite;
+}
+
+@keyframes slide-animation {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-20px); }
+  100% { transform: translateX(0); }
+}
+
+main .seo .seo-content .seo-desciption .seo-opt{
+  font-weight: 700;
+}
+
+main .seo .seo-content .seo-desciption .seo-opt li {
+  padding: 10px 0;
+  border-bottom: #3333332f 1px solid;
+}
+
+
+
+/** ################################################################################################### */
+
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+
+
+main .techno {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+main .double-back {
+  background-color: #A9339A;
+  border-radius: 25px;
+}
+
+main .techno .techno-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e0249;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 50px;
+  transform: translate(-30px, -30px);
+}
+
+main .techno .techno-content h1 {
+  text-align: center;
+  width: 70%;
+  font-size: xx-large;
+}
+
+main .techno .techno-content .techno-list {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+main .techno .techno-content .techno-list .techno-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+
+main .techno .techno-content .techno-list .techno-item h2 {
+  font-size: x-large;
+  margin-top: 20px
+}
+
+/** ################################################################################################### */
+
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+
+
+
+main .us {
+  width: 100%;
+}
+
+main .us .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100% !important;
+  padding: 50px 0px;
+  margin: 0px auto;
+}
+
+main .us section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .us .us-content {
+  width: 50%;
+  padding: 0px;
+}
+
+main .us .img {
+  width: 50%;
+}
+
+main .us .us-left-img {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+}
+main .us .us-right-img {
+  display: flex;
+  align-items: flex-end;
+  padding: 0px;
+}
+
+main .us .us-content h1 {
+  text-align: center;
+  width: 70%;
+  font-size: xx-large;
+}
+
+/** ################################################################################################### */
+
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+/** ################################################################################################### */
+
+main .project {
+  color: #ffffff;
+  width: 100%;
+  padding: auto;
+  background: linear-gradient(90deg, rgba(119, 20, 107, 0.85) 34%, rgba(221, 37, 199, 0.85) 100%);
+}
+
+main .project .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+main .project-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+main .project-content h1 {
+  font-size: xx-large;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+main .project-content .project-button {
+  margin: 20px
+}
+
+main .button-compisite {
+  margin-top: 20px;
+}
+
+main .button-compisite img {
+  margin-left: 10px;
+  transform: translateY(3px);
+}
